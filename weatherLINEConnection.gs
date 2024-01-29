@@ -27,6 +27,7 @@ function actFunction(){
 
     //日没+1時間~翌8時の間で雨がないかつ風速3m以下
     const weatherList = openWeatherSNSconnection_();
+    Logger.log(weatherList);//[日没＋1hからの時間,風速,天候（快晴＝clear)]
 
     let sendFlag = false;
 
